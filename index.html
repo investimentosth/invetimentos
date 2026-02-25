@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulação de Crédito | Planejamento Consórcio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e3e7ea; /* CINZA CONFORTÁVEL */
+    color: #2c3e50;
+}
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HERO */
+.hero {
+    padding: 100px 20px 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #3a444b, #262f35);
+    color: #ffffff;
+    border-radius: 0 0 40px 40px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #cfd8dc;
+    margin-bottom: 35px;
+}
+
+/* BOTÃO */
+.button {
+    background: linear-gradient(90deg, #1f8f5f, #176f4a);
+    color: white;
+    padding: 15px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+.section {
+    padding: 70px 15px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 45px;
+    font-weight: 600;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.text-center {
+    text-align: center;
+    max-width: 700px;
+    margin: 30px auto 0 auto;
+    color: #5f6f7a;
+}
+
+/* CARROSSEL */
+.carousel {
+    margin-top: 40px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* FORM */
+.form-section {
+    background: #ffffff;
+    padding: 70px 20px;
+    border-radius: 30px 30px 0 0;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccd6dd;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #1f8f5f;
+    box-shadow: 0 0 0 3px rgba(31,143,95,0.15);
+}
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+/* RESPONSIVO REAL */
+@media (max-width: 768px) {
+
+.hero {
+    padding: 80px 15px 60px 15px;
+}
+
+.hero h1 {
+    font-size: 26px;
+}
+
+.hero p {
+    font-size: 15px;
+}
+
+.section {
+    padding: 50px 10px;
+}
+
+.section-title {
+    font-size: 22px;
+}
+
+.slides img {
+    height: 250px;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero container">
+    <h1>Simule seu crédito e descubra seu potencial de conquista</h1>
+    <p>
+        Planejamento estratégico através do consórcio.<br>
+        Atendimento especializado em Araquari.
+    </p>
+    <a href="#formulario" class="button">Simular meu crédito</a>
+</div>
+
+<div class="section container">
+    <div class="section-title">Objetivos que podem ser planejados</div>
+
+    <div class="cards">
+        <div class="card"><h3>Veículos</h3></div>
+        <div class="card"><h3>Imóveis</h3></div>
+        <div class="card"><h3>Máquinas e Equipamentos</h3></div>
+        <div class="card"><h3>Investimento Patrimonial</h3></div>
+    </div>
+
+    <p class="text-center">
+        O consórcio é uma alternativa estruturada para quem busca crescimento com organização financeira.
+    </p>
+
+    <div class="carousel">
+        <div class="slides" id="slides">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1400&auto=format&fit=crop">
+            <img src="https://images.unsplash.com/photo-1581093458791-9d42e8f7c6a0?q=80&w=1400&auto=format&fit=crop">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop">
+        </div>
+    </div>
+</div>
+
+<div class="form-section" id="formulario">
+    <div class="section-title">Solicite sua simulação personalizada</div>
+
+    <form onsubmit="enviarWhatsApp(event)">
+        <input type="text" id="nome" placeholder="Nome completo" required>
+
+        <select id="objetivo" required>
+            <option value="">Objetivo desejado</option>
+            <option>Veículo</option>
+            <option>Imóvel</option>
+            <option>Construção e Reforma</option>
+            <option>Máquinas ou Equipamentos</option>
+            <option>Investimento Patrimonial</option>
+        </select>
+
+        <input type="text" id="valor" placeholder="Valor aproximado do bem" required>
+
+        <button type="submit" class="button">Quero analisar meu crédito agora</button>
+    </form>
+</div>
+
+<footer>
+Simulação estimada. A liberação da carta de crédito está sujeita às condições da administradora e análise no momento da contemplação.
+</footer>
+
+<script>
+function enviarWhatsApp(event) {
+    event.preventDefault();
+
+    var nome = document.getElementById("nome").value;
+    var objetivo = document.getElementById("objetivo").value;
+    var valor = document.getElementById("valor").value;
+
+    var mensagem =
+`*Nova Solicitação de Simulação*
+
+Nome: ${nome}
+Objetivo: ${objetivo}
+Valor aproximado: ${valor}
+
+Solicitação enviada pelo site.`;
+
+    var numero = "5547992181851";
+    var url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
+
+    window.open(url, '_blank');
+}
+
+let index = 0;
+const slides = document.getElementById("slides");
+const totalSlides = slides.children.length;
+
+setInterval(() => {
+    index++;
+    if (index >= totalSlides) index = 0;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}, 1800);
+</script>
+
+</body>
+</html>
